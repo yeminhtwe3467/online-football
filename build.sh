@@ -10,4 +10,4 @@ apt-get install -y wget fonts-liberation libappindicator3-1 libnss3 libxss1 libx
 pip install -r requirements.txt
 
 # Install Playwright dependencies and browsers
-npx playwright install --with-deps
+npx playwright install
