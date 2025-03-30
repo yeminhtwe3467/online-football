@@ -1,4 +1,7 @@
 #!/bin/bash
 
-pip install -r requirements.txt  # Install dependencies
-playwright install  # Install Playwright browsers
+# Install dependencies
+pip install -r requirements.txt
+
+# Install playwright browsers
+playwright install --with-deps
