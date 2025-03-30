@@ -1,11 +1,13 @@
 #!/bin/bash
 
-# Install system dependencies for Playwright
+# Update apt repositories
 apt-get update
+
+# Install necessary dependencies for Playwright (without root)
 apt-get install -y wget ca-certificates fonts-liberation libappindicator3-1 libnss3 libxss1 libxtst6 xdg-utils
 
-# Install Python dependencies
+# Install Python dependencies from requirements.txt
 pip install -r requirements.txt
 
-# Install Playwright browsers with dependencies
+# Install Playwright dependencies and browsers
 npx playwright install --with-deps
