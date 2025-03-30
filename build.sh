@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Install Playwright browsers
-playwright install
+mkdir -p /home/render/.cache  # Ensure the cache directory exists
+pip install -r requirements.txt  # Install dependencies
+playwright install  # Install Playwright browsers
