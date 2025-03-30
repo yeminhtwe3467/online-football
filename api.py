@@ -5,9 +5,6 @@ from playwright.async_api import async_playwright
 
 app = FastAPI()
 # Check if we're running on Render or a server-like environment
-if platform.system() != "Darwin":  # Avoiding macOS environment (local)
-    cache_dir = '/home/render/.cache'
-    os.makedirs(cache_dir, exist_ok=True)
 
 # Load environment variables
 USER_AGENT = os.getenv("SCRAPER_USER_AGENT", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36")
